@@ -1,0 +1,270 @@
+
+Create ODS Layer ETL and Configure Dictionary tables
+13
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;"><br>
+<!--[if !supportLineBreakNewLine]--><br>
+<!--[endif]--><o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Step 1: Create ODS Tables<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">A. Open the<span style="color:#FF9C00"> Heartstroke _ODS</span>&nbsp;file,
+located in the&nbsp;<span style="color:#FF9C00">Heartstroke</span> _ODS Folder.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal">
+
+
+
+
+
+<span style="font-size:14.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA">B. Executing the code will create all the ODS
+tables for the ODS layer.</span></p><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/7/1.jpg" style="width: 100%;"><span style="font-size:14.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA"><br></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Step 2: Create ETL Sequence Container to Load Staging
+Tables.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">A. Drag and Drop a Sequence Container into the Control Flow
+and name it&nbsp;<span style="color:blue">SC -ODS Layer</span>.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">B. Connect the<span style="color:blue">&nbsp;SC - Staging
+Layer</span>&nbsp;to the&nbsp;<span style="color:blue">SC - ODS Layer</span>.</span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/7/2.jpg" style="width: 100%;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;"><br></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Step 3: Add Data Flow Tasks to Sequence Container
+named&nbsp;<span style="color:blue">SC - ODS Layer</span>.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">A. Drag and Drop 7 Data Flow Task into the Sequence
+Container.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal"><span style="font-size:14.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA">
+
+
+
+</span>
+
+
+
+<span style="font-size:14.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA">B. Name them as shown in the image</span></p><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal"><span style="font-size:14.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA"><br></span></p><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/7/3.jpg" style="width: 100%;"><span style="font-size:14.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA"><br></span></p><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal"><span style="font-size:14.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA"><br></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Step 4: Add a Source, transformations and a destination to
+the Data Flow Task named<span style="color:blue">&nbsp;tbl_dictionary_Location</span><o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">A. Double Click the Data Flow Task.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">B. Drag and Drop an OLE DB Source and name it as shown in
+the image below.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">C. Drag and Drop a Derived Column transformation and name it
+as shown in the image below.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">D. Drag and Drop a Look Up transformation&nbsp;and name them
+as shown in the image below.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">E. Drag and Drop an OLE DB Destination and name it as shown
+in the image below.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">F. Connect them as shown in the image.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal"><span style="font-size:14.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA">
+
+
+
+
+
+
+
+
+
+
+
+</span><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/7/4.jpg" style="width: 100%;"></p><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal"><br></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Step 5: Set Up the OLE DB Source named&nbsp;<span style="color:blue">OLE DB Source_HeartStroke_stg <o:p></o:p></span></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">A. Double Click the OLE DB Source.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">B. Set the OLE DB connection manager to HEART_STROKE_STG<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">C. Set the Data access mode to SQL Command<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">D. Copy and Paste the code from the file&nbsp;<span style="color:#FF9C00">Load_Dictionary_Location</span>, found in the ODS Folder,
+into the SQL<br>
+command text box.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">E. Click OK.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal">
+
+
+
+
+
+
+
+
+
+
+
+</p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Refer to the screenshot below</span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/7/5.jpg" style="width: 100%;"></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Step 6: Set up the Derived Column transformation named<span style="color:blue">&nbsp;Derived Column for Location</span>.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">A. Double Click the Derived Column transformation.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">B. Set the Derived Column Name section as shown in the image
+below.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">C. Set the Derived Column section as shown in the image
+below.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal">
+
+
+
+
+
+
+
+</p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">D. Type the code in the Expression Tab as shown in image
+below.</span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p><br></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/7/6.jpg" style="width: 100%;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p><br></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Step 7: Set up the Connection Manager to the ODS Database.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">A. Right Click in the Connection Manager Section.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">B. Select New OLE DB Connection.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">C. Select HEART_STROKE_ODS.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal">
+
+
+
+
+
+
+
+</p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">D. Click OK.</span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/7/7.jpg" style="width: 100%;"></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Step 8: Set up the Look Up transformation named<span style="color:blue">&nbsp;LU-Location</span>.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">A. Double Click the Look Up transformation.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal">
+
+
+
+</p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">B. Configure the General Tab as Shown.</span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/7/8.jpg" style="width: 100%;"></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">C. Configure the Connection Tab as Shown.</span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/7/9.jpg" style="width: 100%;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">&nbsp;</span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal">
+
+
+
+</p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">D. Configure the Columns Tab as shown.</span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/7/10.jpg" style="width: 100%;"></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Step 9: Configure the OLE DB Destination named&nbsp;<span style="color:blue">OLEDB Destination for Location</span>.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">A. Double Click the OLE DB Destination.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">B. Configure the Connection Manager Tab as shown.</span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/7/11.jpg" style="width: 100%;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">&nbsp;</span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">C. Configure the Mappings Tab as shown.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">&nbsp;</span><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/7/12.jpg" style="width: 100%;"></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 14pt;">D. Click OK.</span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Step 10: Configure 4 other dictionary Data Flow Tasks and
+leave one for the main ODS table.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">A. Click the Control Flow Tab.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">B. Repeat Steps 4 - 9 for tbl_dictionary_Topic and tbl_dictionary_BreakoutCategory<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">C. For tbl_dictionary_Indicator and tbl_dictionary_Breakout,<o:p></o:p></span></p><p class="MsoListParagraphCxSpFirst" style="margin-top:0in;margin-right:0in;
+margin-bottom:7.5pt;margin-left:.75in;mso-add-space:auto;text-indent:-.25in;
+line-height:normal;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:14.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]--><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Double Click the Data Flow Task.<o:p></o:p></span></p><p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:0in;
+margin-bottom:7.5pt;margin-left:.75in;mso-add-space:auto;text-indent:-.25in;
+line-height:normal;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:14.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]--><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Drag and Drop an OLE DB Source <o:p></o:p></span></p><p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:0in;
+margin-bottom:7.5pt;margin-left:.75in;mso-add-space:auto;text-indent:-.25in;
+line-height:normal;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:14.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]--><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Drag and Drop a Derived Column <o:p></o:p></span></p><p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:0in;
+margin-bottom:7.5pt;margin-left:.75in;mso-add-space:auto;text-indent:-.25in;
+line-height:normal;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:14.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]--><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Drag and Drop a Look Up
+transformation&nbsp;1-Lookup TOPIC<o:p></o:p></span></p><p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:0in;
+margin-bottom:7.5pt;margin-left:.75in;mso-add-space:auto;text-indent:-.25in;
+line-height:normal;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:14.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]--><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Drag and Drop a Look Up
+transformation&nbsp;2-Lookup INDICATOR<o:p></o:p></span></p><p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:0in;
+margin-bottom:7.5pt;margin-left:.75in;mso-add-space:auto;text-indent:-.25in;
+line-height:normal;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:14.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]--><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;">&nbsp;Drag and Drop an OLE DB Destination and name
+it as shown in the image below.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p><p class="MsoListParagraphCxSpLast" style="margin-top:0in;margin-right:0in;
+margin-bottom:7.5pt;margin-left:.75in;mso-add-space:auto;text-indent:-.25in;
+line-height:normal;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:14.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]--><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Connect them as shown in the image.</span></p><p class="MsoListParagraphCxSpLast" style="margin-top:0in;margin-right:0in;
+margin-bottom:7.5pt;margin-left:.75in;mso-add-space:auto;text-indent:-.25in;
+line-height:normal;mso-list:l0 level1 lfo1"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/7/13.jpg" style="width: 100%;"></p><p class="MsoListParagraphCxSpLast" style="margin-top:0in;margin-right:0in;
+margin-bottom:7.5pt;margin-left:.75in;mso-add-space:auto;text-indent:-.25in;
+line-height:normal;mso-list:l0 level1 lfo1"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/7/14.jpg" style="width: 100%;"></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size: 14pt; font-family: Arial, sans-serif; background-color: rgb(255, 255, 0);">FOR CONFIGURE tbl_dictionary_Indicator</span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Repeat the steps for OLEDB Source, Derived Column and OLEDB
+Destination as shown above.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">For Lookup Transformation 1 and 2 shown below,<o:p></o:p></span></p><p class="MsoListParagraphCxSpLast" style="margin-top:0in;margin-right:0in;
+margin-bottom:7.5pt;margin-left:.75in;mso-add-space:auto;text-indent:-.25in;
+line-height:normal;mso-list:l0 level1 lfo1">
+
+
+
+</p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Lookup Transformation 1-Lookup TOPIC</span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-family: Arial, sans-serif; font-size: 18.6667px;">A. Double Click the Look Up transformation.</span><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;"><br></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-family: Arial, sans-serif; font-size: 18.6667px;">B. Configure the General Tab as Shown.</span><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;"><br></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/7/19.jpg" style="width: 100%;"></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><br></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-family: Arial, sans-serif; font-size: 18.6667px;">C. Configure the Connection Tab as Shown.</span><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/7/20.jpg" style="width: 100%;"></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-family: Arial, sans-serif; font-size: 18.6667px;">D. Configure the Columns Tab as shown.</span><br></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/7/21.jpg" style="width: 100%;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;"><br></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><br></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><br></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-family: Arial, sans-serif; font-size: 18.6667px;">Lookup Transformation 2-Lookup Indicator</span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">A. Double Click the Look Up transformation.</span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-family: Arial, sans-serif; font-size: 18.6667px;">B. Configure the General Tab as Shown.</span><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;"><br></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/7/16.jpg" style="width: 100%;"><span style="font-family: Arial, sans-serif; font-size: 18.6667px;"><br></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-family: Arial, sans-serif; font-size: 18.6667px;">C. Configure the Connection Tab as Shown.</span><span style="font-family: Arial, sans-serif; font-size: 18.6667px;"><br></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/7/17.jpg" style="width: 100%;"><span style="font-family: Arial, sans-serif; font-size: 18.6667px;">D. Configure the Columns Tab as shown.</span><span style="font-family: Arial, sans-serif; font-size: 18.6667px;"><br></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/7/18.jpg" style="width: 100%;"><span style="font-family: Arial, sans-serif; font-size: 18.6667px;"><br></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Check the diagrams below for the outlook of the data flow
+tasks</span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/7/22.jpg" style="width: 100%;"></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/7/24.jpg" style="width: 100%;"><br></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">All codes for the OLEDB Source are&nbsp;in the HEART_STROKE_ODS
+Folder saved with their specific names as shown below<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#FF9C00">Tbl_dictionary_Location<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#FF9C00">Tbl_dictionary_Topic<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#FF9C00">Tbl_dictionary_Indicator<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#FF9C00">Tbl_dictionary_Breakourcategory<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal">
+
+
+
+
+
+
+
+
+
+
+
+<span style="font-size:14.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:#FF9C00;mso-ansi-language:EN-US;
+mso-fareast-language:EN-US;mso-bidi-language:AR-SA">Tbl_dictionary_Breakout<br clear="all" style="mso-special-character:line-break;page-break-before:always"></span><br></p>
+
+<ul><li><a href="https://learn.microsoft.com/en-us/sql/integration-services/data-flow/transformations/derived-column-transformation?view=sql-server-ver16" target="_blank">https://learn.microsoft.com/en-us/sql/integration-services/data-flow/transformations/derived-column-transformation?view=sql-server-ver16</a><a href="https://learn.microsoft.com/en-us/sql/integration-services/data-flow/transformations/derived-column-transformation?view=sql-server-ver16" target="_blank"></a>&nbsp;-DERIVED COUMN TRANSFORMATION</li><li><a href="https://learn.microsoft.com/en-us/sql/integration-services/data-flow/transformations/lookup-transformation?view=sql-server-ver16" target="_blank">https://learn.microsoft.com/en-us/sql/integration-services/data-flow/transformations/lookup-transformation?view=sql-server-ver16</a><a href="https://learn.microsoft.com/en-us/sql/integration-services/data-flow/transformations/lookup-transformation?view=sql-server-ver16" target="_blank"></a>&nbsp;- LOOKUP transformation</li></ul>
+
