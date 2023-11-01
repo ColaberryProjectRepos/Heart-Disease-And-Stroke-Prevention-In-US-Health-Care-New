@@ -1,0 +1,167 @@
+
+Configure Staging ETL Data Flow Task
+12
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal"><br></p><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal"><span style="color: rgb(2, 84, 235); font-family: Lato, Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 700;"><br></span><br></p>
+
+<p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">Step 1: Configure the Staging Layer Data Flow
+Task.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">A. Double Click the Data Flow Task named&nbsp;</span><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#4472C4;mso-themecolor:accent5">Data flow task</span><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">_</span><b><span style="font-size:14.0pt;
+font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:blue">JSON</span></b><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:#767676">.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">B. Drag and drop a Script Component and name
+it&nbsp;</span><b><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:blue">Script Component - JSON
+Extraction</span></b><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:#767676">. Specify the use as
+Source.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">C. Drag and drop an OLEDB Destination and name
+it&nbsp;</span><b><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:blue">OLE DB
+Destination_Tbl_Stg_HeartDisease_Stroke<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">D. Connect them as shown in the image below.</span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676"><o:p><br></o:p></span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/6/1.jpg" style="width: 100%;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676"><o:p><br></o:p></span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">Step 2: Configure the Script Component.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">A. Double Click on the Script Component
+name&nbsp;</span><b><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:blue">Script Component - JSON
+Extraction</span></b><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:#767676">.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">B. Click in the&nbsp;<b>ReadOnlyVariables</b>&nbsp;section
+and select&nbsp;</span><b><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:blue">User::Full_FilePath</span></b><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">C. Click the Inputs and Outputs Tab.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">D. Add all Output Columns and set the Data Types
+and Lengths as </span><span style="font-size: 14pt; font-family: Arial, sans-serif; color: rgb(118, 118, 118); background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">string [DT_STR] and 255 </span><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">respectively.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">
+
+
+
+
+
+
+
+
+
+</p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676"><br>
+E. Click Edit Script.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><br></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/6/3.jpg" style="width: 100%;"></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676"><br></span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">Step 3: Add Code to main.cs<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">A. Delete all the code in main.cs.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">
+
+
+
+</p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">B. Copy and Paste the code, from the&nbsp;</span><b><span style="font-size: 14pt; font-family: Arial, sans-serif; color: rgb(255, 156, 0); background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">Main Script task load Stg_tbl_Heart_Stroke </span></b><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">file in the Staging Folder, into main.cs.</span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/6/4.jpg" style="width: 100%;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676"><br></span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">Step 4: Add necessary Extensions.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">With the main.cs still open.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">A. Under the Solution Explorer right click
+on&nbsp;<b>Add References</b>.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">
+
+
+
+
+
+</p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">B. Select&nbsp;<b>System.Web.Extensions</b>&nbsp;and
+click OK.</span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/6/5.jpg" style="width: 100%;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676"><o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">Step 5: Add a Class.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">With the Main Script still open<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">A. Under the Project tab select&nbsp;<b>Add
+Class</b>.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">
+
+
+
+
+
+</p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">B. Select Class, name it&nbsp;</span><b><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:blue">HeartDisease.cs</span></b><span style="font-size:
+14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#767676"> and click&nbsp;<b>Add</b>.</span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/6/6.jpg" style="width: 100%;"><span style="font-size:
+14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#767676"><o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676"><o:p><br></o:p></span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">Step 6: Add Code to the Class<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">A. Delete the default code in Class and then
+Copy and Paste the code, from the&nbsp;</span><b><span style="font-size:14.0pt;
+font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:blue">class script - JSON</span></b><span style="font-size:14.0pt;
+font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#767676">&nbsp;file in the Staging<br>
+Folder, into&nbsp;</span><b><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:blue">HeartDisease.cs</span></b><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">B. Press the Save All button.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">C. Close the window.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">
+
+
+
+
+
+
+
+<span style="font-size:14.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:#767676;mso-ansi-language:EN-US;
+mso-fareast-language:EN-US;mso-bidi-language:AR-SA">D. Click the OK button in
+the Script Transformation Editor.</span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/6/7.jpg" style="width: 100%;"><span style="font-size:14.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:#767676;mso-ansi-language:EN-US;
+mso-fareast-language:EN-US;mso-bidi-language:AR-SA"><br></span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">Step 7: Configure the OLE DB Destination
+named&nbsp;</span><b><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:blue">OLE DB
+Destination_Tbl_Stg_HeartDisease_Stroke<o:p></o:p></span></b></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">A. Double Click on an OLE DB Destination.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">B. Set the OLE DB connection manager to&nbsp;</span><b><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#4472C4;mso-themecolor:accent5">HEART_SROKE_STG</span></b><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676"><o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">
+
+
+
+
+
+</p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">C. Set the Name of the table to</span><b><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:blue">&nbsp;[dbo].[</span></b><span style="font-size: 9.5pt; font-family: Consolas;"> </span><b><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:blue">Tbl_Stg_HeartDisease_Stroke]</span></b><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">.</span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676"><o:p><br></o:p></span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/6/8.jpg" style="width: 100%;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676"><o:p><br></o:p></span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">Step 8: Configure the Mappings for the OLE DB
+Destination named&nbsp;</span><b><span style="font-size:14.0pt;font-family:
+&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;color:blue">OLE DB
+Destination_Tbl_Stg_HeartDisease_Stroke</span></b><span style="font-size:14.0pt;
+font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#767676">.</span><b><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:blue"><o:p></o:p></span></b></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">A. Click the Mappings tabs.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">B. Set the Mappings as shown below.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">
+
+
+
+
+
+</p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676">C. Click OK.</span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/6/9.jpg" style="width: 100%;"><br></p>
+
+<ol><li><a href="https://learn.microsoft.com/en-us/sql/integration-services/data-flow/transformations/script-component?view=sql-server-ver16" target="_blank">https://learn.microsoft.com/en-us/sql/integration-services/data-flow/transformations/script-component?view=sql-server-ver16</a><a href="https://learn.microsoft.com/en-us/sql/integration-services/data-flow/transformations/script-component?view=sql-server-ver16" target="_blank"></a></li><li>This video explains&nbsp;<a href="https://www.youtube.com/watch?v=NuTphcfS3bc" target="_blank" style="font-weight: normal; font-family: Lato, Helvetica, Arial, sans-serif; font-size: 13pt; background-color: white; color: rgb(2, 84, 235); text-decoration: none;">script components</a><span style="color: dodgerblue; font-family: Lato, Helvetica, Arial, sans-serif; font-size: 13pt;">&nbsp;in SSIS.</span></li></ol><div class="col-sm-12" style="width: 1317px; color: rgb(118, 118, 118); font-family: Lato, Helvetica, Arial, sans-serif;"><button type="button" ng-show="isNotLastStep" ng-click="GetSteps((i.Step) + 1,i,4);scrollTo('divSteps')" class="btn btn-success"><span class="fa fa-arrow-right fa-1x pull-right"></span></button></div>
+
