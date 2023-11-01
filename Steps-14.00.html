@@ -1,0 +1,169 @@
+
+Configure  ODS Data Flow Task in SC-ODS Layer
+14
+<p><br></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">Step 1: Configure Data Flow
+Task named&nbsp;</span><span style="font-size: 14pt; font-family: Arial, sans-serif; color: blue; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">DF_HeartDisease_Stroke_ODS</span><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">.</span><span style="font-size:
+14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">A. Double Click on the Data
+Flow Task.</span><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">B. Drag and Drop an OLE DB
+Source</span><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">C. Drag and Drop 7 Look up
+Transformations and name them as shown.</span><span style="font-size:14.0pt;
+font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">D. Drag and Drop a Derived
+Column transformation and name it as shown.</span><span style="font-size:14.0pt;
+font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">E. Drag and Drop an OLE DB
+Command transformation and name it as shown.</span><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><br>
+<!--[if !supportLineBreakNewLine]--><br>
+<!--[endif]--></span><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p><p>
+
+
+
+
+
+
+
+
+
+
+
+<span style="font-size: 14pt; line-height: 107%; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">F.
+Drag and Drop an OLE DB Destination and name it as shown</span></p><p><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/8/1.jpg" style="width: 100%;"><span style="font-size: 14pt; line-height: 107%; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><br></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">Step 2: Configure the OLE DB
+Source named&nbsp;</span><span style="font-size: 14pt; font-family: Arial, sans-serif; color: blue; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">OLEDB
+Source</span><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">.</span><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">A. Double Click the OLE DB
+Source.</span><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">B. Configure the Connection
+Manager tab as shown.&nbsp;</span><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">Copy
+and Paste the code from the file&nbsp;&nbsp;<span style="color:#FF9C00">ODS_TABLE</span>, located in the&nbsp;ODS Folder, into the SQL
+Command text box.</span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/8/2.jpg" style="width: 100%;"><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><br></span><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">Step 3:&nbsp; Configure the
+Look-Up Transformation named&nbsp;</span><span style="font-size: 14pt; font-family: Arial, sans-serif; color: blue; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">LookUp-Location</span><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><br>
+<!--[endif]--></span><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">A. Double Click the Look-Up
+transformation.</span><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">B. Configure the General tab as
+shown.</span><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/8/3.jpg" style="width: 100%;"><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><br>
+<!--[if !supportLineBreakNewLine]--><br>
+<!--[endif]--></span><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">C. Configure the Connection tab
+as shown.</span><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/8/4.jpg" style="width: 100%;"><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><br>
+<!--[if !supportLineBreakNewLine]--><br>
+<!--[endif]--></span><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p><p><span style="font-size: 14pt; line-height: 107%; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">
+
+
+
+</span>
+
+
+
+
+
+
+
+
+
+
+
+</p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">D. Configure the Columns tab as
+shown.</span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/8/5.jpg" style="width: 100%;"><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><br></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">Step 4: Configure the Derived Column
+named&nbsp;</span><span style="font-size: 14pt; font-family: Arial, sans-serif; color: blue; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">Derived Columns_Audit
+columns</span><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">.<br>
+<!--[if !supportLineBreakNewLine]--><br>
+<!--[endif]--></span><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">A. Double Click on the Derived
+Column transformation.</span><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">
+
+
+
+</span><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">B. Configure it as shown in the
+image below and Click OK.</span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/8/6.jpg" style="width: 100%;"><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><br></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">Step 5: Configure the Look Up
+Transformation Editor named&nbsp;</span><span style="font-size: 14pt; font-family: Arial, sans-serif; color: blue; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">LU-ODS_HEART_STROKE</span><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">.</span><span style="font-size:14.0pt;font-family:
+&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">A. Double Click on the Look Up
+Transformation.</span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size: 14pt;">B. Configure the Connection Tab
+as shown.</span><br></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/8/7.jpg" style="width: 100%;"><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><br>
+<!--[if !supportLineBreakNewLine]--><br>
+<!--[endif]--></span><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">C. Set the Connection Tab as
+shown.</span><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/8/8.jpg" style="width: 100%;"><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><br>
+<!--[if !supportLineBreakNewLine]--><br>
+<!--[endif]--></span><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><br>
+D. Configure the Columns Tab as shown.</span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/8/9.jpg" style="width: 100%;"></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Step 6: Configure the Look Up transformation named&nbsp;<span style="color: blue; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">LU_Updates</span>.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">A. Double Click on the Look Up transformation.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">B. Configure the General Tab as shown.</span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/8/10.jpg" style="width: 100%;"></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">C. Configure the Connection Tab and configure as shown in
+the image.</span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/8/11.jpg" style="width: 100%;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;"><br></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><br></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">D. Configure the Columns Tab as shown.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">&nbsp;</span><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/8/12.jpg" style="width: 100%;"></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Step 7: Configure the OLE DB Command named&nbsp;<span style="color: blue; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">OLEDB Command</span>.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">A. Double Click the OLE DB Command.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">B. Configure the Connection Managers tab as shown in the
+image.</span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/8/13.jpg" style="width: 100%;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 14pt;">C. Configure the Component Properties tab as shown. Code can
+be found in the file </span><span style="font-family: Arial, sans-serif; font-size: 14pt; color: rgb(255, 156, 0);">ODS_Update</span><span style="font-family: Arial, sans-serif; font-size: 14pt;">&nbsp;in the
+ODS Folder.</span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/8/14.jpg" style="width: 100%;"><span style="font-family: Arial, sans-serif; font-size: 14pt;"><br></span></p>
+
+<p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-family: Arial, sans-serif; font-size: 14pt;">D. Configure the Columns Mappings as shown in the image and
+Click OK.</span><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">&nbsp;</span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/8/15.jpg" style="width: 100%;"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;"><br></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Step 8: Configure the OLE DB Destination named&nbsp;<span style="color: blue; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">OLE DB Destination_ODS_HEART_STROKE<o:p></o:p></span></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">A. Double Click the OLEDB Destination.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">B. Configure the Connection Manager as shown.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">&nbsp;</span><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/8/16.jpg" style="width: 100%;"></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">&nbsp;</span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size: 14pt; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size: 14pt; line-height: 107%; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">
+<!--[if !supportLineBreakNewLine]-->
+
+
+
+
+
+
+
+
+
+
+<!--[endif]--></span></span><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><span style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">C. Configure the Mappings as shown and OK.</span></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/8/17.jpg" style="width: 100%;"></p><p class="MsoNormal" style="margin-bottom:7.5pt;line-height:normal"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1325/8/18.jpg" style="width: 100%;"><br></p>
+
+<p><span style="color: rgb(118, 118, 118); font-family: Lato, Helvetica, Arial, sans-serif; font-size: 16px;">Read more&nbsp;about&nbsp;</span><a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwjDzL2dmLyAAxXmlGoFHVJ1ALYQFnoECAgQAw&amp;url=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fsql%2Fintegration-services%2Fdata-flow%2Ftransformations%2Flookup-transformation%3Fview%3Dsql-server-ver16&amp;usg=AOvVaw1z8CX6Ht05pL6T33NRwrAV&amp;opi=89978449" target="_blank" style="background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); text-decoration: none; font-family: Lato, Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 400;">Look up transformation here.</a></p><p><a href="https://learn.microsoft.com/en-us/sql/integration-services/data-flow/transformations/lookup-transformation?view=sql-server-ver16" target="_blank">https://learn.microsoft.com/en-us/sql/integration-services/data-flow/transformations/lookup-transformation?view=sql-server-ver16</a></p><p><br></p><p><br></p>
+
